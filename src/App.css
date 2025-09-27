@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-150%) rotate(12deg);
+  }
+  100% {
+    transform: translateX(150%) rotate(12deg);
+  }
+}
+
+.animate-move {
+  animation: moveLine 1s linear infinite;
+}
+
